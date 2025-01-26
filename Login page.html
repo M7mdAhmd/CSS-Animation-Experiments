@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width
+  =device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Login page.css">
+  <style>
+        *{
+      letter-spacing: 0.25px;
+      margin: 0;
+      padding: 0
+    }
+    body{
+      background-color: #ABABAB
+    }
+    .main{
+      background-color: #000000;
+      border-radius: 50px;
+      margin: 150px auto;
+      width:330px;
+      height: 420px;
+      display: flex;
+      align-items: flex-end;
+      position: relative
+    }
+    .main .icon{
+      background-color: #DDFFFB;
+      width: fit-content;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top:-130px;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+    .main .icon i{
+      color: #00AA95;
+      font-size: 100px
+    } 
+    .container{
+      width: 330px;
+      height: 380px;
+      margin: 0px auto 0 auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .container h1{
+      text-align: center;
+      color: #00ECDD
+    }
+    .container input[type="text"]{
+      border: 1.15px solid #8CC1BD;
+      background-color: #000000;
+      padding: 15px;
+      width: 150px;
+      border-radius: 15px;
+      text-align: center;
+      color: #ABABAB;
+      font-size: 105%;
+      transition: 0.3s
+    }
+    .container input[type="password"]{
+      border: 1.15px solid #8CC1BD;
+      background-color: #000000;
+      padding: 15px;
+      width: 150px;
+      border-radius: 15px;
+      text-align: center;
+      color:#ABABAB;
+      font-size: 105%;
+      transition: 0.3s
+    }
+    .container input[type="submit"]{
+      background-color: #000000;
+      color:#ABABAB;
+      text-align: center;
+      font-size: 105%;
+      width: 90px;
+      padding: 8px;
+      border: 1.15px solid #8CC1BD;
+      border-radius: 20px
+    }
+    .container h3{
+      color: #ABABAB;
+      font-size: 100%
+    }
+    .container a{
+      text-decoration: none;
+      color: #00ECDD;
+      font-size: 175%;
+      font-weight: bold
+    }
+   .main .container input[type="text"]:focus{
+      width: 75%;
+      padding: 10px;
+      border: 1.15px solid #00FFB8;
+      outline: none
+    }
+    .main .container input[type="password"]:focus{
+      width: 75%;
+      padding: 10px;
+      border: 1.15px solid #00FFB8;
+      outline: none
+    }
+  </style>
+  <title>Login page</title>
+</head>
+<body>
+  <form action="Login page.html" method="POST">
+<div class="main">
+    <div class="icon">
+      <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="container">
+    <h1>Login</h1>
+    <input type="text" placeholder
+    ="username">
+    <input type="password" required 
+    placeholder="password">
+    <input type="submit" value="Login" >
+    <h3>OR</h3>
+    <a href="Loading Page.html">Sign in</a>
+  </div>
+</div>
+</form>
+</body>
+</html>

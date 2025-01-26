@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading Circles</title>
+  <style>
+    body{
+      background-color: black
+    }
+    .container{
+      width: auto; height: auto; display: inline-flex; gap: 10px; position: absolute; top: 30%; left: 50%;transform: translate(-50%, -10%); 
+    }
+  
+    .first-circle{
+      width: 30px;height: 30px;position: relative;animation: infinite cro 400ms alternate;border-radius: 100%;background-color: #1Aff00;animation-delay: 0ms
+    }
+    @keyframes cro{
+      to{transform: translateY(50px)}
+    } 
+    .second-circle{
+      width: 30px;height: 30px;background-color: rgba(0, 225, 0, 0.8);position: relative;animation:  for infinite 400ms alternate;border-radius: 100%;animation-delay: 100ms
+    }
+    @keyframes for {
+      to{transform: translateY(50px);}
+    } 
+    .third-circle{
+      width: 30px;height: 30px;background-color: rgba(0, 225, 0, 0.3);position: relative;animation:  or infinite 400ms alternate;border-radius: 100%;animation-delay: 200ms
+    }
+    @keyframes or{
+      to {transform: translateY(50px)}
+    }
+  </style>
+</head> 
+<body bgcolor="black">
+  <div class="container">
+    <div class="first-circle"></div>
+    <div class="second-circle"></div>
+    <div class="third-circle"></div>
+  </div>
+</body>
+</html> 

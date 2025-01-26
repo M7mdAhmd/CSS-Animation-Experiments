@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slider Switch</title>
+  <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+:root{
+  --bgcolor:#FF1D34
+}
+body{
+  background-color: black
+}
+.container{
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.container input{
+  appearance: none;
+  width: 140px;
+  height: 65px;
+  background-color: transparent;
+  border-radius: 85px;
+  position: absolute;
+  z-index: 1
+}
+.slider{
+  background-color: var(--bgcolor);
+  width: 140px;
+  height: 65px;
+  border-radius: 85px;
+  padding: 5px;
+  box-shadow: 0 10px 25px #FF0A0A;
+  transform: translateX(27.5px)
+}
+.circle{
+  background-color: #FFFFFF;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: relative;
+  right: 107.5px;
+  transition: 0.5s
+}
+.circle::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--bgcolor);
+  box-shadow: 28px 0 0 var(--bgcolor);
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  transition: 0.5s
+}
+.circle::after{
+  content: "";
+  width: 20px;
+  height: 8px;
+  background-color: var(--bgcolor);
+  position: absolute;
+  bottom: 10px;
+  left:17.5px;
+  transition: 0.5s
+}
+input:checked ~ .slider{
+  --bgcolor: green;
+  box-shadow: 0 10px 25px #77FD84
+}
+input:checked ~ .circle::after{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+input:checked ~ .circle{
+  transform: translateX(75px);
+  --bgcolor: green
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox">
+    <div class="slider"></div>
+    <div class="circle"></div>
+  </div>
+</body>
+</html>

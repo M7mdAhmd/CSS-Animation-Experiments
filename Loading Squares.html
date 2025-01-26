@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading Squares</title>
+<style>
+.parent{
+  width: 120px;
+  height: 120px;
+  margin: 100px auto;
+  position: relative;
+}
+.parent div{
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  background-image: linear-gradient(#4B7CFF,#0012DD,#959EFF);
+  border-radius: 50
+}
+.parent .four{
+  animation: play 2s linear infinite
+}
+.parent .three{
+  animation: play 2s linear infinite;
+  animation-delay: 0.5s
+} 
+.parent .two{
+  animation: play 2s linear infinite;
+  animation-delay: 1s
+} 
+.parent .one{
+  animation: play 2s linear infinite;
+  animation-delay: 1.5s
+} 
+@keyframes play{
+  0%{
+    width: 35px;
+    height: 35px
+  }
+  25%{
+    transform: translateX(80px);
+    background-image: linear-gradient(#36A9FF,#2500B5)
+  }
+  50%{
+    transform: translate(80px,80px);
+  }
+  65%{
+    background-image: linear-gradient(#0C35FF)
+  }
+  75%{
+    transform: translateY(80px)
+  }
+  100%{
+    transform: translate(0,0);
+    width: 35px;
+    height: 35px
+  }
+}
+</style>
+</head>
+<body>
+    <div class="parent">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+    </div>
+</body>
+</html>
