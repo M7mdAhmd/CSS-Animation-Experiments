@@ -39,4 +39,4 @@ This repository contains a collection of CSS animation projects showcasing vario
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/css-animation-projects.git
+   git clone https://github.com/M7mdAhmd/css-animation-projects.git
